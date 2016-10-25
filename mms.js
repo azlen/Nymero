@@ -34,6 +34,7 @@ var mms = {
 	'V': 8,
 	'Z': 0,
 	'ZH': 6,
+	'ER': 4,
 }
 
 function getcommon(nstr) {

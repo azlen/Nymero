@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+	<link href="https://fonts.googleapis.com/css?family=Noto+Sans" rel="stylesheet">
+	<head>
+		<meta charset="utf-8">
+		<title>MMS :: OOM</title>
+
+		<style>
+			html, body {
+				width: 100%;
+				height: 100%;
+				margin: 0;
+				padding: 0;
+				font-family: "Noto Sans" sans-serif;
+			}
+
+			body {
+				display: flex;
+				align-items: center;
+				background-color: #ECF0F1;
+			}
+
+			#container {
+				margin: auto;
+			}
+
+			#input {
+				background-color: #263248;
+				border: none;
+				padding: 20px 40px;
+				width: 500px;
+				text-align: center;
+				font-family: "Noto Sans";
+				font-size: 30px;
+				display: block;
+				outline: none;
+				color: #ECF0F1;
+				letter-spacing: 1px;
+			}
+
+			#input::-webkit-input-placeholder {
+				color: #ECF0F1;
+				font-weight: bold;
+				opacity: 0.2;
+				transition: all .2s;
+			}
+			#input:-moz-placeholder {
+				color: #ECF0F1;
+				opacity: 0.5;
+				transition: all .2s;
+			}
+			#input::-moz-placeholder {
+				color: #ECF0F1;
+				opacity: 0.5;
+				transition: all .2s;
+			}
+			#input:-ms-input-placeholder {
+				color: #ECF0F1;
+				opacity: 0.5;
+				transition: all .2s;
+			}
+
+			#input:focus::-webkit-input-placeholder {
+				opacity: 0;
+			}
+
+			#output {
+				font-family: "Noto Sans", sans-serif;
+				font-size: 20px;
+				text-align: center;
+				min-height: 30px;
+				margin-top: 10px;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="container">
+			<!--<h1>OOM</h1>-->
+			<input id="input" type="text" placeholder="3.141592"/>
+			<div id="output"></div>
+			<!--<button>Remember</button>-->
+		</div>
+		<script src="require.js"></script>
+		<script src="mms.js"></script>
+		<script src="main.js"></script>
+	</body>
+</html>

@@ -71,8 +71,9 @@ for line in commonwordsfile.readlines():
 
 		corpi['common'][word] = count
 
-for line in posfile.readlines():
-	match = re.match(r'(.*)◊(.*)', line)
+for line in posfile.read().split('\r'):
+	match = re.match(r'(.*)\t(.*)', line)
+	print line, match
 	if match:
 		word = match.group(1)
 		pos = match.group(2)

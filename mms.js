@@ -5,7 +5,7 @@ var corpi = {
 }
 
 require(['text.js', 'json.js'], function() {
-	require(['json!./common.json', 'json!./pron.json', 'json!./pos.json'], function(a, b, c) {
+	require(['json!./common.json', 'json!./pron.json'/*, 'json!./pos.json'*/], function(a, b, c) {
 		corpi.common = a;
 		corpi.pron = b;
 		corpi.pos = c;
